@@ -1,0 +1,19 @@
+
+.ant-layout-content{
+    height: 100%;
+}
+.ant-layout-sider-children {
+    background-color: white;
+}
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark .ant-menu-item, :where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark>.ant-menu .ant-menu-item, :where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark .ant-menu-submenu-title, :where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark>.ant-menu .ant-menu-submenu-title {
+    color: black;
+}
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark, :where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark>.ant-menu {
+    color: rgba(255, 255, 255, 0.65);
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05); /* 轻微阴影 */
+    padding-top: 20px;
+}
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1hpnbz2).ant-menu-dark>.ant-menu .ant-menu-item-selected {
+    background-color: #cccccc;
+}
