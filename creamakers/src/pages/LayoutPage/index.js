@@ -1,4 +1,5 @@
 import React from 'react';
+import 'antd/dist/reset.css';
 import './index.scss';
 import {
     HomeOutlined,
@@ -47,7 +48,7 @@ const LayoutPage = ()=>{
                 width={200}
             >
                 <div className="demo-logo-vertical" />
-                <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} items={items.map(item => item)} onClick={handleClick}/>
+                <Menu mode="inline" defaultSelectedKeys={['1']} items={items.map(item => item)} onClick={handleClick}/>
                 <div style={{fontSize:12,position:'absolute',left:44,bottom:30}}>备案信息：湘A123456</div>
             </Sider>
             <Layout>
