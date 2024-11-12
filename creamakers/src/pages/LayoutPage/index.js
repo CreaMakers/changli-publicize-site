@@ -73,7 +73,6 @@ const LayoutPage = () => {
                     <div
                         style={{
                             padding: 24,
-                            minHeight: 1260,
                             background: colorBgContainer,
                             borderRadius: borderRadiusLG,
                         }}
