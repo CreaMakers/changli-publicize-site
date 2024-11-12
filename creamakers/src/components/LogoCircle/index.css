@@ -23,4 +23,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
+    transition: transform 1s ease-out;
+}
+
+.initial-position {
+    transform: translate(0px, 0px);
+    opacity: 0;
+}
+
+.final-position {
+    opacity: 1;
+    animation: moveOut 1s ease-out forwards;
+}
+
+@keyframes moveOut {
+    from {
+        transform: translate(0px, 0px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
