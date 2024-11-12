@@ -1,16 +1,16 @@
-.root{
-    :global{
-        .imageshow{
+.root {
+    :global {
+        .imageshow {
             left: 12px;
             width: 360px;
             height: 400px;
             margin-left: 214px;
             position: relative;
         }
-        hr{
+        hr {
             border: 1px solid #e1e1e1; /* 1px宽的红色实线 */
         }
-        .context{
+        .context {
             margin-top: 20px;
             width: 75%;
             height: 420px;
@@ -18,142 +18,17 @@
             text-align: left;
             line-height: 24px;
         }
-        .context p{
-            text-indent: 2em; 
+        .context p {
+            text-indent: 2em;
             line-height: 26px;
         }
-        .context ul li{
+        .context ul li {
             width: 1100px;
-            text-indent: 2em; 
+            text-indent: 2em;
             text-align: left;
         }
-        //团队logo
-        .image-item0{
-            position: absolute;
-            top: 120px;
-            left:120px;
-            width: 150px;
-            height: 150px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin:10px;
-            border-radius: 72px;
 
-        }
-        //成员头像
-        .image-item1{
-            position: absolute;
-            top: 60px;
-            left:25px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px ;
-            border-radius: 50px;
-        }
-        .image-item2{
-            position: absolute;
-            top: 20px;
-            left:115px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px 15px;
-            border-radius: 50px;
-        }
-        .image-item3{
-            position: absolute;
-            top: 20px;
-            left:205px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px 15px;
-            border-radius: 50px;
-        }
-        .image-item4{
-            position: absolute;
-            top: 60px;
-            left:295px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-        .image-item5{
-            position: absolute;
-            top: 166px;
-            left:5px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-        .image-item6{
-            position: absolute;
-            top: 166px;
-            left:315px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-        .image-item7{
-            position: absolute;
-            top: 272px;
-            left:25px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-        .image-item8{
-            position: absolute;
-            top: 272px;
-            left:295px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-        .image-item9{
-            position: absolute;
-            top: 312px;
-            left:115px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-        .image-item10{
-            position: absolute;
-            top: 312px;
-            left:205px;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 5px;
-            border-radius: 50px;
-        }
-
-
-        .rightSidebar{
+        .rightSidebar {
             width: 200px;
             height: 240px;
             right: 120px;
@@ -162,7 +37,7 @@
             border-radius: 10px;
             box-shadow: inset 0 0 1px #b0b0b0;
         }
-        ul{
+        ul {
             margin: 5px;
             padding: 5px;
             font-size: 16px;
@@ -171,11 +46,11 @@
             cursor: pointer;
             list-style: none;
         }
-        .rightSidebar ul li{
+        .rightSidebar ul li {
             margin: 5px;
             padding: 5px;
         }
-        .rightSidebar ul li.active{
+        .rightSidebar ul li.active {
             color: #4d888c;
         }
     }
