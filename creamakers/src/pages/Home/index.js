@@ -6,6 +6,7 @@ import sourceMarkdown from "../../assets/markdown/home.md";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import { unified } from "unified";
+import { Col, Row } from "antd";
 
 const extractHeadings = (markdownText) => {
     const headings = [];
@@ -49,11 +50,15 @@ const Home = () => {
 
     return (
         <div>
-            <LogoCircle logo={logo} avatars={avatars} />
+            <Row>
+                <Col span={20}>
+                    <LogoCircle logo={logo} avatars={avatars} />
+                    <MarkdownWithAnchors markdown={markdown} />
+                </Col>
+                <Col span={4}></Col>
+            </Row>
+
             <SidePanel headings={headings} />
-            <div>
-                <MarkdownWithAnchors markdown={markdown} />
-            </div>
         </div>
     );
 };
