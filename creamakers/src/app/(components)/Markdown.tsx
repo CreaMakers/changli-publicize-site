@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const components: Components = {
-  h1: ({ ...props }) => <Title level={2} {...props} />,
-  h2: ({ ...props }) => <Title level={3} {...props} />,
-  h3: ({ ...props }) => <Title level={4} {...props} />,
-  h4: ({ ...props }) => <Title level={5} {...props} />,
+  h1: ({ ...props }) => <Title id={props.children?.toString()} level={2} {...props} />,
+  h2: ({ ...props }) => <Title id={props.children?.toString()} level={3} {...props} />,
+  h3: ({ ...props }) => <Title id={props.children?.toString()} level={4} {...props} />,
+  h4: ({ ...props }) => <Title id={props.children?.toString()} level={5} {...props} />,
   p: ({ ...props }) => <Paragraph {...props} />,
 
   strong: ({ ...props }) => <Text strong {...props} />,
