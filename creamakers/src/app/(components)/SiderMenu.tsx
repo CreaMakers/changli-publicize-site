@@ -11,7 +11,7 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
   { key: "home", label: "主页", icon: <HomeOutlined /> },
-  { key: "posts/project", label: "项目", icon: <ProjectOutlined /> },
+  { key: "posts/projects", label: "项目", icon: <ProjectOutlined /> },
   { key: "posts/information", label: "资料", icon: <SnippetsOutlined /> },
   { key: "posts/contact", label: "联系我们", icon: <PhoneOutlined /> },
 ];

@@ -1,23 +1,15 @@
-"use client";
+import { Markdown, Metadata } from "@/app/(components)";
+import { Divider } from "antd";
+import { use } from "react";
 
-import { useState } from "react";
-
-export default function Post({ params }: { params: { name: string } }) {
-  const name = params.name;
-
-  const [markdown, setMarkdown] = useState<string>("");
-
-  fetch(`/markdown/${name}.md`)
-    .then((response) => response.text())
-    .then((text) => {
-      console.log(text);
-      setMarkdown(text);
-    });
+export default function Post({ params }: { params: Promise<{ name: string }> }) {
+  const { name } = use(params);
 
   return (
-    <div>
-      <p>Post Name: {name}</p>
-      <pre>{markdown}</pre>
+    <div className="p-7">
+      <Metadata name={name} />
+      <Divider style={{ borderColor: "#7cb305" }} />
+      <Markdown name={name} />
     </div>
   );
 }
