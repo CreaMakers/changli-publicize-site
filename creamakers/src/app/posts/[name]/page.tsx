@@ -34,7 +34,7 @@ export default function Post({ params }: { params: Promise<{ name: string }> }) 
           icon={<ToTopOutlined />}
           type="primary"
           onClick={() => {
-            scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         />
       </Col>
