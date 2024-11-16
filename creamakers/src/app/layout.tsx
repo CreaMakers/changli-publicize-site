@@ -16,7 +16,9 @@ export default function RootLayout({
             <Col span={4}>
               <SiderMenu />
             </Col>
-            <Col span={20}>{children}</Col>
+            <Col span={20}>
+              <div className="p-7">{children}</div>
+            </Col>
           </Row>
         </AntdRegistry>
       </body>

@@ -24,8 +24,8 @@ export default function Post({ params }: { params: Promise<{ name: string }> }) 
   }, [name]);
 
   return (
-    <Row className="p-7">
-      <Col span={20}>
+    <Row>
+      <Col span={18}>
         <Metadata name={name} />
         <Divider style={{ borderColor: "#7cb305" }} />
         <Markdown markdown={markdown} />
@@ -38,8 +38,10 @@ export default function Post({ params }: { params: Promise<{ name: string }> }) 
           }}
         />
       </Col>
-      <Col span={4}>
-        <MarkdownAnchor markdown={markdown} />
+      <Col span={6}>
+        <div className="p-7">
+          <MarkdownAnchor markdown={markdown} />
+        </div>
       </Col>
     </Row>
   );
