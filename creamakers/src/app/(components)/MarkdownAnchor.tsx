@@ -2,7 +2,7 @@
 
 import { Anchor } from "antd";
 import { AnchorLinkItemProps } from "antd/es/anchor/Anchor";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import { unified } from "unified";
@@ -65,19 +65,13 @@ const buildAnchorItems = (headings: Heading[]): AnchorLinkItemProps[] => {
   return items;
 };
 
-export function MarkdownAnchor({ name }: { name: string }) {
+export function MarkdownAnchor({ markdown }: { markdown: string }) {
   const items: AnchorLinkItemProps[] = useMemo(() => [], []);
 
-  useEffect(() => {
-    fetch(`/raw/${name}/index.md`)
-      .then((res) => res.text())
-      .then((markdownText) => {
-        const headings = extractHeadings(markdownText);
-        const anchorItems = buildAnchorItems(headings);
-        
-        items.splice(0, items.length, ...anchorItems);
-      });
-  }, [name, items]);
+  const headings = extractHeadings(markdown);
+  const anchorItems = buildAnchorItems(headings);
+
+  items.splice(0, items.length, ...anchorItems);
 
   return <Anchor items={items} />;
 }

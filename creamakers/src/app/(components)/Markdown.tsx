@@ -2,7 +2,6 @@
 
 import ReactMarkdown, { Components } from "react-markdown";
 import { Typography, Divider } from "antd";
-import { useEffect, useState } from "react";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
@@ -30,21 +29,6 @@ const components: Components = {
   a: ({ ...props }) => <Link href={props.href} />,
 };
 
-export function Markdown({ name }: { name: string }) {
-  const [markdown, setMarkdown] = useState<string>("");
-
-  useEffect(() => {
-    fetch(`/raw/${name}/index.md`)
-      .then((response) => {
-        if (!response.ok) {
-          return `Error: ${response.status}`;
-        }
-        return response.text();
-      })
-      .then((text) => {
-        setMarkdown(text);
-      });
-  }, [name]);
-
+export function Markdown({ markdown }: { markdown: string }) {
   return <ReactMarkdown components={components}>{markdown}</ReactMarkdown>;
 }
