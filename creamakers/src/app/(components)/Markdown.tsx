@@ -15,8 +15,12 @@ const components: Components = {
   strong: ({ ...props }) => <Text strong {...props} />,
   em: ({ ...props }) => <Text italic {...props} />,
 
-  ul: ({ ...props }) => <ul style={{ paddingLeft: "20px" }} {...props} />,
-  ol: ({ ...props }) => <ol style={{ paddingLeft: "20px" }} {...props} />,
+  ul: ({ ...props }) => (
+    <Paragraph>
+      <ul {...props} />
+    </Paragraph>
+  ),
+  ol: ({ ...props }) => <ol {...props} />,
 
   li: ({ ...props }) => <li {...props} />,
 
@@ -26,9 +30,13 @@ const components: Components = {
 
   hr: () => <Divider />,
 
-  a: ({ ...props }) => <Link href={props.href} />,
+  a: ({ ...props }) => <Link href={props.href}>{props.children}</Link>,
 };
 
 export function Markdown({ markdown }: { markdown: string }) {
-  return <ReactMarkdown components={components}>{markdown}</ReactMarkdown>;
+  return (
+    <Typography>
+      <ReactMarkdown components={components}>{markdown}</ReactMarkdown>
+    </Typography>
+  );
 }
