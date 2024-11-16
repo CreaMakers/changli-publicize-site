@@ -1,4 +1,9 @@
-import { LogoCircle } from "@/app/(components)";
+"use client";
+
+import { LogoCircle, Markdown, MarkdownAnchor } from "@/app/(components)";
+import { ToTopOutlined } from "@ant-design/icons";
+import { Col, FloatButton, Row } from "antd";
+import { useEffect, useState } from "react";
 
 const avatars = [
   "/assets/team-people/325.jpg",
@@ -16,9 +21,41 @@ const avatars = [
 const logo = "/assets/team-logo.png";
 
 export default function Home() {
+  const [markdown, setMarkdown] = useState("");
+
+  useEffect(() => {
+    fetch(`/raw/home/index.md`)
+      .then((response) => {
+        if (!response.ok) {
+          return `Error: ${response.status}`;
+        }
+        return response.text();
+      })
+      .then((markdownText) => {
+        setMarkdown(markdownText);
+      });
+  }, []);
+
   return (
-    <div>
+    <Row>
+      <Col span={18}>
+      
       <LogoCircle logo={logo} avatars={avatars} />
-    </div>
+        <Markdown markdown={markdown} />
+
+        <FloatButton
+          icon={<ToTopOutlined />}
+          type="primary"
+          onClick={() => {
+            scrollTo(0, 0);
+          }}
+        />
+      </Col>
+      <Col span={6}>
+        <div className="p-7">
+          <MarkdownAnchor markdown={markdown} />
+        </div>
+      </Col>
+    </Row>
   );
 }
