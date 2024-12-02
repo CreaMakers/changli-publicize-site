@@ -24,7 +24,7 @@ const avatars = [
   "/assets/members/avatars/Zhe_Learn.webp",
 ];
 
-const logo = "/assets/team-logo.png";
+const logo = "/assets/team-logo.webp";
 
 export default function Home() {
   const [markdown, setMarkdown] = useState("");
