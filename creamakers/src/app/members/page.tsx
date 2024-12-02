@@ -1,7 +1,7 @@
 "use client";
 
 import { GithubOutlined, LinkOutlined } from "@ant-design/icons";
-import { Card, Col, Row, Typography } from "antd";
+import { Card, Col, Row, Tag, Typography } from "antd";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -13,7 +13,15 @@ interface Member {
   github_url: string;
   website_url: string | null;
   avatar: string;
+  tag: string[] | null;
 }
+
+const tagColorMap: { [key: string]: string } = {
+  前端: "blue",
+  后端: "green",
+  移动端: "volcano",
+  UI: "purple",
+};
 
 export default function Members() {
   const [members, setMembers] = useState<Member[]>([]);
@@ -73,6 +81,18 @@ export default function Members() {
                           个人网站
                         </a>
                       </p>
+                    )}
+                    {member.tag && (
+                      <div>
+                        {member.tag.map((tag, tagIndex) => (
+                          <Tag
+                            color={tagColorMap[tag] || "default"}
+                            key={tagIndex}
+                          >
+                            {tag}
+                          </Tag>
+                        ))}
+                      </div>
                     )}
                   </div>
                 }
