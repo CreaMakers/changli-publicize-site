@@ -6,16 +6,22 @@ import { Col, FloatButton, Row } from "antd";
 import { useEffect, useState } from "react";
 
 const avatars = [
-  "/assets/team-people/325.jpg",
-  "/assets/team-people/AlrginCypress.jpg",
-  "/assets/team-people/Dcelysiz.png",
-  "/assets/team-people/Hayaizo.jpg",
-  "/assets/team-people/isryds.jpg",
-  "/assets/team-people/MedivhTirisfal.jpg",
-  "/assets/team-people/Sakuranori.jpg",
-  "/assets/team-people/Sylvia.jpg",
-  "/assets/team-people/Xiayu.jpg",
-  "/assets/team-people/yuxialuozi.png",
+  "/assets/members/avatars/325.jpg",
+  "/assets/members/avatars/浮尘.jpg",
+  "/assets/members/avatars/何某.jpg",
+  "/assets/members/avatars/魏子青.webp",
+  "/assets/members/avatars/下雨.jpg",
+  "/assets/members/avatars/樱之丽.jpg",
+  "/assets/members/avatars/Alrgin.jpg",
+  "/assets/members/avatars/Dcelysia.png",
+  "/assets/members/avatars/Hayaizo.jpg",
+  "/assets/members/avatars/isryds.jpg",
+  "/assets/members/avatars/liaoliao.jpeg",
+  "/assets/members/avatars/lllccc.jpg",
+  "/assets/members/avatars/Medivh.jpg",
+  "/assets/members/avatars/melt..jpg",
+  "/assets/members/avatars/yuxialuozi.jpg",
+  "/assets/members/avatars/Zhe_Learn.png",
 ];
 
 const logo = "/assets/team-logo.png";

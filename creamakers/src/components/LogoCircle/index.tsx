@@ -34,7 +34,7 @@ export function LogoCircle({
             backgroundImage: `url(${logo})`,
             transform: `rotate(${
               index * (360 / avatars.length)
-            }deg) translate(150px) rotate(-${
+            }deg) translate(200px) rotate(-${
               index * (360 / avatars.length)
             }deg)`,
           }}
