@@ -4,76 +4,103 @@
     "website_nickname": "melt.",
     "github_url": "https://github.com/melt412",
     "website_url": null,
-    "avatar": "melt..jpg"
+    "avatar": "melt..jpg",
+    "tag": ["UI"]
   },
   {
     "qq_nickname": "Zhe_Learn",
     "website_nickname": "Zhe_Learn",
     "github_url": "https://github.com/zHElEARN",
     "website_url": "https://blogs.zhelearn.com",
-    "avatar": "Zhe_Learn.png"
+    "avatar": "Zhe_Learn.png",
+    "tag": ["前端"]
   },
   {
     "qq_nickname": "yuxialuozi（计科2203刘毅晨）",
     "website_nickname": "yuxialuozi",
     "github_url": "https://github.com/yuxialuozi",
     "website_url": "https://www.xn--ghq663ao0ncr3a.top",
-    "avatar": "yuxialuozi.jpg"
+    "avatar": "yuxialuozi.jpg",
+    "tag": ["后端"]
   },
   {
     "qq_nickname": "325",
     "website_nickname": "325",
     "github_url": "https://github.com/325my",
     "website_url": null,
-    "avatar": "325.jpg"
+    "avatar": "325.jpg",
+    "tag": ["移动端"]
   },
   {
     "qq_nickname": "L.C.",
     "website_nickname": "isryds",
     "github_url": "https://github.com/isryds",
     "website_url": null,
-    "avatar": "isryds.jpg"
+    "avatar": "isryds.jpg",
+    "tag": null
   },
   {
     "qq_nickname": "Ambition.",
     "website_nickname": "浮尘",
     "github_url": "https://github.com/fucheng2004",
     "website_url": null,
-    "avatar": "浮尘.jpg"
+    "avatar": "浮尘.jpg",
+    "tag": ["后端"]
   },
   {
     "qq_nickname": "了了",
     "website_nickname": "liaoliao",
     "github_url": "https://github.com/qinchuange",
     "website_url": "https://qinchuange.github.io",
-    "avatar": "liaoliao.jpeg"
+    "avatar": "liaoliao.jpeg",
+    "tag": ["后端"]
   },
   {
     "qq_nickname": "Sasi",
     "website_nickname": "lllccc",
     "github_url": "https://github.com/lclclc0123",
     "website_url": null,
-    "avatar": "lllccc.jpg"
+    "avatar": "lllccc.jpg",
+    "tag": ["后端"]
   },
   {
     "qq_nickname": "桜のれい",
     "website_nickname": "樱之丽",
     "github_url": "3048191169@qq.com",
     "website_url": null,
-    "avatar": "樱之丽.jpg"
+    "avatar": "樱之丽.jpg",
+    "tag": ["UI"]
   },
   {
     "qq_nickname": "Elysian剑彧",
     "website_nickname": "Dcelysia",
     "github_url": "https://github.com/Dcelysia",
     "website_url": "https://dcelysia.top",
-    "avatar": "Dcelysia.png"
+    "avatar": "Dcelysia.png",
+    "tag": ["后端", "移动端"]
   },
   {
     "qq_nickname": "Hayaizo",
     "website_nickname": "Hayaizo",
     "github_url": "https://github.com/1973526541",
     "website_url": "https://www.hayaizo.cn",
-    "avatar": "Hayaizo.jpg"
+    "avatar": "Hayaizo.jpg",
+    "tag": ["后端"]
+  },
+  {
+    "qq_nickname": "Sylvia",
+    "website_nickname": "魏子青",
+    "github_url": "https://github.com/Sylvia051202",
+    "website_url": null,
+    "avatar": "魏子青.webp",
+    "tag": ["移动端"]
+  },
+  {
+    "qq_nickname": "Alrgin Cypress",
+    "website_nickname": "Alrgin",
+    "github_url": "https://github.com/Alrgin",
+    "website_url": null,
+    "avatar": "Alrgin.jpg",
+    "tag": ["移动端"]
   }
 ]
