@@ -6,22 +6,22 @@ import { Col, FloatButton, Row } from "antd";
 import { useEffect, useState } from "react";
 
 const avatars = [
-  "/assets/members/avatars/325.jpg",
-  "/assets/members/avatars/浮尘.jpg",
-  "/assets/members/avatars/何某.jpg",
+  "/assets/members/avatars/325.webp",
+  "/assets/members/avatars/浮尘.webp",
+  "/assets/members/avatars/何某.webp",
   "/assets/members/avatars/魏子青.webp",
-  "/assets/members/avatars/下雨.jpg",
-  "/assets/members/avatars/樱之丽.jpg",
-  "/assets/members/avatars/Alrgin.jpg",
-  "/assets/members/avatars/Dcelysia.png",
-  "/assets/members/avatars/Hayaizo.jpg",
-  "/assets/members/avatars/isryds.jpg",
-  "/assets/members/avatars/liaoliao.jpeg",
-  "/assets/members/avatars/lllccc.jpg",
-  "/assets/members/avatars/Medivh.jpg",
-  "/assets/members/avatars/melt..jpg",
-  "/assets/members/avatars/yuxialuozi.jpg",
-  "/assets/members/avatars/Zhe_Learn.png",
+  "/assets/members/avatars/下雨.webp",
+  "/assets/members/avatars/樱之丽.webp",
+  "/assets/members/avatars/Alrgin.webp",
+  "/assets/members/avatars/Dcelysia.webp",
+  "/assets/members/avatars/Hayaizo.webp",
+  "/assets/members/avatars/isryds.webp",
+  "/assets/members/avatars/liaoliao.webp",
+  "/assets/members/avatars/lllccc.webp",
+  "/assets/members/avatars/Medivh.webp",
+  "/assets/members/avatars/melt..webp",
+  "/assets/members/avatars/yuxialuozi.webp",
+  "/assets/members/avatars/Zhe_Learn.webp",
 ];
 
 const logo = "/assets/team-logo.png";
