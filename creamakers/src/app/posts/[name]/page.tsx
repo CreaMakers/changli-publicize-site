@@ -1,11 +1,15 @@
 "use client";
 
-import { Markdown, MarkdownAnchor, Metadata } from "@/app/(components)";
+import { Markdown, MarkdownAnchor, Metadata } from "@/components";
 import { ToTopOutlined } from "@ant-design/icons";
 import { Col, Divider, FloatButton, Row } from "antd";
 import { use, useEffect, useState } from "react";
 
-export default function Post({ params }: { params: Promise<{ name: string }> }) {
+export default function Post({
+  params,
+}: {
+  params: Promise<{ name: string }>;
+}) {
   const { name } = use(params);
 
   const [markdown, setMarkdown] = useState("");

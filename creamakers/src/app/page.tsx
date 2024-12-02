@@ -1,6 +1,6 @@
 "use client";
 
-import { LogoCircle, Markdown, MarkdownAnchor } from "@/app/(components)";
+import { LogoCircle, Markdown, MarkdownAnchor } from "@/components";
 import { ToTopOutlined } from "@ant-design/icons";
 import { Col, FloatButton, Row } from "antd";
 import { useEffect, useState } from "react";
@@ -39,8 +39,7 @@ export default function Home() {
   return (
     <Row>
       <Col span={18}>
-      
-      <LogoCircle logo={logo} avatars={avatars} />
+        <LogoCircle logo={logo} avatars={avatars} />
         <Markdown markdown={markdown} />
 
         <FloatButton

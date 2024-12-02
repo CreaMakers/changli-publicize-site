@@ -5,12 +5,16 @@ import { useEffect, useState } from "react";
 
 type Metadata = {
   name: string;
-  author: string; 
+  author: string;
   date: string;
 };
 
 export function Metadata({ name }: { name: string }) {
-  const [metadata, setMetadata] = useState<Metadata>({name: "", author: "", date: ""});
+  const [metadata, setMetadata] = useState<Metadata>({
+    name: "",
+    author: "",
+    date: "",
+  });
 
   useEffect(() => {
     fetch(`/raw/${name}/metadata.json`)

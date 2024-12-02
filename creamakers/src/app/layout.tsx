@@ -1,7 +1,7 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "./globals.css";
 import { Col, Row } from "antd";
-import { SiderMenu } from "@/app/(components)";
+import { SiderMenu } from "@/components";
 
 export default function RootLayout({
   children,
