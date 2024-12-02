@@ -2,6 +2,12 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "./globals.css";
 import { Col, Row } from "antd";
 import { SiderMenu } from "@/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "CreaMakers",
+  description: "CreaMaker 是由长沙理工大学计算机学院的学生自主创建的组织",
+};
 
 export default function RootLayout({
   children,
