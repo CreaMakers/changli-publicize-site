@@ -5,6 +5,7 @@ import {
   PhoneOutlined,
   ProjectOutlined,
   SnippetsOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
 import { Menu, MenuProps, Space, Typography } from "antd";
 import MenuItem from "antd/es/menu/MenuItem";
@@ -16,6 +17,8 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
   { key: "home", label: "主页", icon: <HomeOutlined /> },
+  { key: "members", label: "成员", icon: <UserOutlined /> },
+  { type: "divider" },
   { key: "posts/projects", label: "项目", icon: <ProjectOutlined /> },
   { key: "posts/information", label: "资料", icon: <SnippetsOutlined /> },
   { key: "posts/contact", label: "联系我们", icon: <PhoneOutlined /> },
